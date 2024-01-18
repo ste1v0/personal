@@ -1,19 +1,24 @@
 import './App.css'
 import { useState } from 'react'
 import Header from './components/Header'
-import Main from './components/Main'
+import Hero from './components/Hero'
 import Footer from './components/Footer'
 
 function App() {
 
-	const [count, setCount] = useState(0)
+	const [fontIncreased, setFontIncreased] = useState(false)
+	const [lightMode, setLightMode] = useState(false)
 
 	return (
-		<>
-			<Header />
-			<Main/>
+		<div 
+			style={
+				{fontSize: fontIncreased ? 'var(--increased)': 'var(--default)',
+				color: lightMode ? 'black' : 'white'
+				}} className={lightMode ? "bg-light" : "bg-dark"}>
+			<Header lightMode={lightMode} setLightMode={setLightMode} fontIncreased={fontIncreased} setFontIncreased={setFontIncreased} />
+			<Hero />
 			<Footer />
-		</>
+		</div>
 	)
 }
 

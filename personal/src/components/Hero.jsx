@@ -1,11 +1,11 @@
-export default function Main() {
+export default function Hero() {
     return (
         <>
             <main>
-                <section class="main__left">
+                <section className="hero__left">
                     <div>Part I</div>
                 </section>
-                <section class="main__right">
+                <section className="hero__right">
                     <div>Part II</div>
                 </section>
             </main>
