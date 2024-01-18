@@ -14,10 +14,10 @@ function App() {
 			style={
 				{fontSize: fontIncreased ? 'var(--increased)': 'var(--default)',
 				color: lightMode ? 'black' : 'white'
-				}} className={lightMode ? "bg-light" : "bg-dark"}>
+				}} className={lightMode ? "bg--light" : "bg--dark"}>
 			<Header lightMode={lightMode} setLightMode={setLightMode} fontIncreased={fontIncreased} setFontIncreased={setFontIncreased} />
-			<Hero />
-			<Footer />
+			<Hero lightMode={lightMode} />
+			<Footer lightMode={lightMode} />
 		</div>
 	)
 }
