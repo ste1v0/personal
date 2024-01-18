@@ -1,4 +1,6 @@
-html {
+:root {
+	--black: #000;
+	--white: #fff;
 	box-sizing: border-box;
 }
 
@@ -8,4 +10,29 @@ body {
 	font-family: 'DM Sans', sans-serif;
 }
 
+nav {
+	border: 5px solid black;
+}
 
+.header__container {
+	display: flex;
+	list-style: none;
+	gap: 2vw;
+	border: 1px solid gray;
+	justify-content: flex-end;
+	margin-right: clamp(1rem, -6.39rem + 13.14vw, 9.375rem);
+}
+
+@media screen and (max-width: 900px) {
+	.header__container {
+		gap: 5vw;
+		margin-right: 0;
+		justify-content: center;
+	}
+}
+
+main  {
+	display: flex;
+	justify-content: space-around;
+	border: 1px solid green;
+}
