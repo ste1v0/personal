@@ -1,5 +1,6 @@
 export default function Header({lightMode, setLightMode, fontIncreased, setFontIncreased}) {
 
+
     function changeMode() {
         setLightMode(prevValue => !prevValue)
     }
@@ -17,7 +18,7 @@ export default function Header({lightMode, setLightMode, fontIncreased, setFontI
                         </span>
                     </li>
                     <li className="material-symbols-outlined" onClick={changeMode}>
-                        <span>
+                    <span>
                             {lightMode ? "dark_mode" : "light_mode"}
                         </span>
                     </li>
