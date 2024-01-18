@@ -1,6 +1,5 @@
 export default function Header({lightMode, setLightMode, fontIncreased, setFontIncreased}) {
-
-
+    
     function changeMode() {
         setLightMode(prevValue => !prevValue)
     }

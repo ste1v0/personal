@@ -1,12 +1,14 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 import Placeholder from 'react-bootstrap/Placeholder';
 
-export default function Hero({lightMode}) {
+export default function Hero({lightMode, fontIncreased}) {
 
 const [animate, setAnimate] = useState(false)
+const [count, setCount] = useState(0)
 
 function handleClick() {
+    setCount(prevValue => prevValue + 1)
     setAnimate(true)
     setTimeout(function() {
         setAnimate(false)
@@ -14,22 +16,26 @@ function handleClick() {
 }
 
 const animation = {
-    transform: 'rotate(1turn)',
-	transition: 'transform 3.25s'
+    transform: 'rotate(1turn) scale(0.4)',
+	transition: 'all 3.25s',
+    borderRadius: '50%'
 }
 
     return (
         <>
             <main>
                 <section className="hero__left">
-                    <div onClick={handleClick} style={animate ? animation : {display: 'block'}} className={lightMode ? "hero__profile hero__profile__pic--dark" : "hero__profile hero__profile__pic--light"}></div>
+                    <div onClick={handleClick} style={animate ? animation : {display: 'block'}} className={lightMode ? "hero__profile hero__profile__pic--dark" : "hero__profile hero__profile__pic--light"}><span className="hero__tap hover">{animate ? '' : '← Tap!'}</span></div>
+                    <div style={{backgroundColor: lightMode ? 'whitesmoke' : 'purple'}}className="hero__count capitalize">Taps count: {count}</div>
 
                 </section>
                 <section className="hero__right">
-                    <div>Part II</div>
+                    <h1 style={{fontSize: fontIncreased ? 'var(--title-increased)': 'var(--title-default)'}}>Lorem ipsum</h1>
+                    {animate ?
                     <Placeholder animation="glow">
-                        <Placeholder style={{ width: '25vh' }} /> {' '}
+                        <Placeholder style={{ width: '20vw' }} />{' '}
                     </Placeholder>
+                    : <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>}
                 </section>
             </main>
         </>
