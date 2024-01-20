@@ -29,7 +29,7 @@ const animation = {
                         <span className="hero__tap hover">{animate ? '' : '← Tap!'}</span>
                     </SlAnimation>
                     </div>
-                    {/* <div style={{backgroundColor: !lightMode ? 'whitesmoke' : 'purple', color: lightMode ? 'white' : 'black'}}className="hero__count capitalize">Taps count: {count}</div> */}
+                    <div style={{backgroundColor: !lightMode ? 'whitesmoke' : 'purple', color: lightMode ? 'white' : 'black'}}className="hero__count capitalize">Taps count: {count}</div>
 
                 </section>
                 <section className="hero__right">
@@ -38,15 +38,16 @@ const animation = {
                             <SlCarouselItem>
                                 <img
                                     className="hero__carousel-pic"
-                                    alt="The sun shines on the mountains and trees (by Adam Kool on Unsplash)"
+                                    alt="Boxd game database"
                                     src="./src/assets/boxd-min.png"
                                 />
                             </SlCarouselItem>
                             <SlCarouselItem>
                                 <img
                                     className="hero__carousel-pic"
-                                    alt="The sun shines on the mountains and trees (by Adam Kool on Unsplash)"
+                                    alt="RSS Gaming News"
                                     src="./src/assets/rssgames-min.png"
+                                        
                                 />
                             </SlCarouselItem>
                         </SlCarousel>
