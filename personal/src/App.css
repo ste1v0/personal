@@ -215,7 +215,7 @@ nav > ul > li {
 	margin-top: 15px;
 	padding-bottom: 1px;
 	position: relative;
-	margin-bottom: .3vh;
+	margin-bottom: .95vh;
 }
 
 .hero__carousel-title::after {
@@ -231,6 +231,11 @@ nav > ul > li {
 
 .hero__right > a {
 	text-decoration: none;
+}
+
+sl-carousel-item {
+	max-height: 110px;
+	border-radius: 7px;
 }
 
 main  {
