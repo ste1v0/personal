@@ -1,12 +1,19 @@
 import { useState, useEffect } from 'react'
 import { Icon } from '@iconify/react';
-import { SlAnimation } from '@shoelace-style/shoelace/dist/react';
+import { SlRating, SlAnimation } from '@shoelace-style/shoelace/dist/react';
 
 import Placeholder from 'react-bootstrap/Placeholder';
 
 export default function Footer({lightMode}) {
     const [fact, setFact] = useState([])
     const [reload, setReload] = useState(false)
+    const [rating, setRating] = useState(0)
+    const [hover, setHover] = useState('')
+
+    function getSymbol(value) {
+        const icons = ['emoji-angry', 'emoji-frown', 'emoji-expressionless', 'emoji-smile', 'emoji-laughing'];
+        return `<sl-icon name="${icons[value - 1]}"></sl-icon>`;
+    }
 
 	useEffect(function() {
         setFact([])
@@ -38,6 +45,9 @@ export default function Footer({lightMode}) {
                 <Placeholder style={{width: '30vw', marginBottom: '2vh'}} />{' '}
             </Placeholder>
             </>}
+            <div className="footer__rating">
+            {rating ? <SlAnimation name="jackInTheBox" duration={1000} iterations={1} play ><div>Thanks!</div></SlAnimation> : <SlRating className={lightMode ? `light rating--${hover}` : `dark rating--${hover}`} label="Rating" getSymbol={getSymbol} onSlHover={(event) => setHover(event.target.value)} onSlChange={() => setRating(true)} />}
+            </div>
             <div className={lightMode ? "footer__icons footer__github--dark pointer" : "footer__icons footer__github--light pointer"}></div>
         </footer>
     )

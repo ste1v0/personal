@@ -8,6 +8,18 @@
 	font-family: 'DM Sans', sans-serif;
 }
 
+sl-rating::part(base):hover {
+	--symbol-color-active: white;
+}
+
+sl-rating.light {
+	--symbol-color: black;
+}
+
+sl-rating.dark {
+	--symbol-color: white;
+}
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -48,10 +60,6 @@
 .scale:hover {
 	transform: scale(1.4);
 	transition: all .5s;
-}
-
-.light:hover {
-	box-shadow: 0 0 20px;
 }
 
 @keyframes fadeIn {
@@ -121,7 +129,6 @@ nav > ul > li {
 @media screen and (max-width: 900px) {
 	.header__container {
 		gap: 5vw;
-		margin-right: 0;
 		justify-content: center;
 	}
 }
@@ -147,6 +154,9 @@ nav > ul > li {
 	box-shadow: 4px 1px 15px black;
 }
 
+.hero__profile:hover {
+	box-shadow: 0 0 20px;
+}
 .hero__tap {
 	font-weight: 200;
 	position: absolute;
@@ -204,6 +214,10 @@ footer {
 	min-width: 300px;
 	border-radius: 12px;
 	padding: 2vh 1.5vw;
+}
+
+.footer__rating {
+	margin-bottom: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
 }
 
 .footer__icons {
