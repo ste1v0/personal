@@ -39,14 +39,14 @@ const animation = {
                                 <img
                                     className="hero__carousel-pic"
                                     alt="Boxd game database"
-                                    src="./src/assets/boxd-min.png"
+                                    src="./boxd-min.png"
                                 />
                             </SlCarouselItem>
                             <SlCarouselItem>
                                 <img
                                     className="hero__carousel-pic"
                                     alt="RSS Gaming News"
-                                    src="./src/assets/rssgames-min.png"
+                                    src="./rssgames-min.png"
                                         
                                 />
                             </SlCarouselItem>
