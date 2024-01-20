@@ -39,13 +39,14 @@
 	animation: fadeIn ease-in-out 1.5s;
 }
 
+
 .rotate:hover {
 	transform: rotate(1turn);
 	transition: all 1s;
 }
 
 .scale:hover {
-	transform: scale(1.2);
+	transform: scale(1.4);
 	transition: all .5s;
 }
 
