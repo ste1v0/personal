@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import Placeholder from 'react-bootstrap/Placeholder';
-import { SlAnimation } from '@shoelace-style/shoelace/dist/react';
+import { SlAnimation, SlCarousel, SlCarouselItem } from '@shoelace-style/shoelace/dist/react';
 
 export default function Hero({lightMode, fontIncreased}) {
 
@@ -30,16 +29,27 @@ const animation = {
                         <span className="hero__tap hover">{animate ? '' : '← Tap!'}</span>
                     </SlAnimation>
                     </div>
-                    <div style={{backgroundColor: !lightMode ? 'whitesmoke' : 'purple', color: lightMode ? 'white' : 'black'}}className="hero__count capitalize">Taps count: {count}</div>
+                    {/* <div style={{backgroundColor: !lightMode ? 'whitesmoke' : 'purple', color: lightMode ? 'white' : 'black'}}className="hero__count capitalize">Taps count: {count}</div> */}
 
                 </section>
                 <section className="hero__right">
-                    <h1 style={{fontSize: fontIncreased ? 'var(--title-increased)': 'var(--title-default)'}}>Lorem ipsum</h1>
-                    {animate ?
-                    <Placeholder animation="glow">
-                        <Placeholder style={{ width: '20vw' }} />{' '}
-                    </Placeholder>
-                    : <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>}
+                    <h2 className="nabla" style={{fontSize: fontIncreased ? 'var(--title-increased)': 'var(--title-default)'}}>Latest projects</h2>
+                        <SlCarousel autoplay loop pagination mouseDragging className="hero__carousel">
+                            <SlCarouselItem>
+                                <img
+                                    className="hero__carousel-pic"
+                                    alt="The sun shines on the mountains and trees (by Adam Kool on Unsplash)"
+                                    src="./src/assets/boxd-min.png"
+                                />
+                            </SlCarouselItem>
+                            <SlCarouselItem>
+                                <img
+                                    className="hero__carousel-pic"
+                                    alt="The sun shines on the mountains and trees (by Adam Kool on Unsplash)"
+                                    src="./src/assets/rssgames-min.png"
+                                />
+                            </SlCarouselItem>
+                        </SlCarousel>
                 </section>
             </main>
         </>

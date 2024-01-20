@@ -8,6 +8,16 @@
 	font-family: 'DM Sans', sans-serif;
 }
 
+.nabla {
+	font-family: "Nabla", system-ui;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-variation-settings:
+	  "EDPT" 90,
+	  "EHLT" 12;
+  }
+
 sl-rating::part(base):hover {
 	--symbol-color-active: white;
 }
@@ -177,12 +187,40 @@ nav > ul > li {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
+	align-items: center;
+}
+
+.hero__right > h2 {
+	text-align: center;
+	margin-bottom: 4vh;
+}
+
+.hero__carousel {
+	width: 100%;
+	--aspect-ratio: 16 / 8;	
+	max-width: 300px;
+	margin-bottom: 4vh;
+}
+
+.hero__carousel-pic {
+	border-radius: 7px;
 }
 
 main  {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
+	width: 90%;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 760px) {
+	main {
+		display: flex;
+		gap: 10vh;
+		flex-direction: column;
+		align-items: center;
+	}
 }
 
 footer {
