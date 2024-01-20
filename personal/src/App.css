@@ -8,6 +8,10 @@
 	font-family: 'DM Sans', sans-serif;
 }
 
+a:link {
+	text-decoration: none;
+}
+
 .nabla {
 	font-family: "Nabla", system-ui;
 	font-optical-sizing: auto;
@@ -16,7 +20,7 @@
 	font-variation-settings:
 	  "EDPT" 90,
 	  "EHLT" 12;
-  }
+}
 
 sl-rating::part(base):hover {
 	--symbol-color-active: white;
@@ -204,6 +208,29 @@ nav > ul > li {
 
 .hero__carousel-pic {
 	border-radius: 7px;
+}
+
+.hero__carousel-title {
+	min-height: 25px;
+	margin-top: 15px;
+	padding-bottom: 1px;
+	position: relative;
+	margin-bottom: .3vh;
+}
+
+.hero__carousel-title::after {
+	background: rgb(252,70,107);
+	background: linear-gradient(90deg, rgba(252,70,107,1) 0%, rgba(63,94,251,1) 100%);
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+}
+
+.hero__right > a {
+	text-decoration: none;
 }
 
 main  {
