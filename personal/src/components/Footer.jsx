@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Icon } from '@iconify/react';
+import { SlAnimation } from '@shoelace-style/shoelace/dist/react';
 
 import Placeholder from 'react-bootstrap/Placeholder';
 

@@ -1,6 +1,6 @@
 import { useState } from 'react'
-
 import Placeholder from 'react-bootstrap/Placeholder';
+import { SlAnimation } from '@shoelace-style/shoelace/dist/react';
 
 export default function Hero({lightMode, fontIncreased}) {
 
@@ -25,7 +25,11 @@ const animation = {
         <>
             <main className="fade-in-hero">
                 <section className="hero__left">
-                    <div onClick={handleClick} style={animate ? animation : {display: 'block'}} className={lightMode ? "hero__profile hero__profile__pic--dark light pointer" : "hero__profile hero__profile__pic--light light pointer"}><span className="hero__tap hover">{animate ? '' : '← Tap!'}</span></div>
+                    <div onClick={handleClick} style={animate ? animation : {display: 'block'}} className={lightMode ? "hero__profile hero__profile__pic--dark light pointer" : "hero__profile hero__profile__pic--light light pointer"}>
+                    <SlAnimation name="flash" duration={4000} play>
+                        <span className="hero__tap hover">{animate ? '' : '← Tap!'}</span>
+                    </SlAnimation>
+                    </div>
                     <div style={{backgroundColor: !lightMode ? 'whitesmoke' : 'purple', color: lightMode ? 'white' : 'black'}}className="hero__count capitalize">Taps count: {count}</div>
 
                 </section>
