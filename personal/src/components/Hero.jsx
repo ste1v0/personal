@@ -53,7 +53,7 @@ const animation = {
                             Telegram
                             </div>
                         </a>
-                        <a href="https://ste1v0.dev/cv_stepan_serov_fe_developer.pdf" target="_blank" rel="noreferrer">
+                        <a href="https://ste1v0.dev/serov_frontend.pdf" target="_blank" rel="noreferrer">
                             <div className="hero__resume">
                                 <Icon icon="iwwa:file-pdf" className="hover" width="32" height="32" /> 
                                 Resume
@@ -67,8 +67,8 @@ const animation = {
                     <h2 className="kaushan-script-regular" style={{fontSize: fontIncreased ? 'var(--title-increased)': 'var(--title-default)'}}>Latest projects</h2>
                     <div className="embla" ref={emblaRef}>
                         <div className="embla__container">
-                            <div className="embla__slide boxd"><span className="embla__slide-text"><a href="https://fabulous-marigold-8f871e.netlify.app/" target="_blank">→ Games Database</a></span></div>
-                            <div className="embla__slide gamingnews"><span className="embla__slide-text"><a href="https://stunning-shortbread-4017c3.netlify.app" target="_blank">→ Gaming News</a></span></div>
+                            <div className="embla__slide boxd"><span className="embla__slide-text"><a href="https://fabulous-marigold-8f871e.netlify.app/" target="_blank" rel="noreferrer">→ Games Database</a></span></div>
+                            <div className="embla__slide gamingnews"><span className="embla__slide-text"><a href="https://stunning-shortbread-4017c3.netlify.app" target="_blank" rel="noreferrer">→ Gaming News</a></span></div>
                         </div>   
                     </div>
                 </section>
