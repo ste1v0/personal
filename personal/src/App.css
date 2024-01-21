@@ -4,7 +4,7 @@
 	--default: 1rem;
 	--increased: 1.1rem;
 	--title-default: 3rem;
-	--title-increased: 4rem;
+	--title-increased: 3.6rem;
 	--name-default: 1.2rem;
 	--name-increased: 1.4rem;
 	--position-default: 0.9rem;
@@ -189,8 +189,32 @@ nav > ul > li {
 
 .hero__icons {
 	display: flex;
-	align-items: center;
+	flex-direction: column;
 	flex-wrap: wrap;
+	gap: 1vh;
+}
+
+.hero__icons > a {
+	color: inherit;
+}
+
+.hero__telegram {
+	display: flex;
+	gap: 0.5vw;
+	align-items: center;
+}
+
+.hero__resume {
+	display: flex;
+	gap: 0.5vw;
+	align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+	.hero__telegram,
+	.hero__resume {
+		gap: 2vw;
+	}
 }
 
 .hero__text {
@@ -204,8 +228,20 @@ nav > ul > li {
 	text-transform: uppercase;
 }
 
+@media screen and (max-width: 900px) {
+	.hero__position {
+		margin-bottom: 2vh;
+	}
+}
+
 .hero__name {
 	font-weight: 600;
+}
+
+@media screen and (max-width: 900px) {
+	.hero__name {
+		margin-bottom: 1vh;
+	}
 }
 
 .hero__badges {
@@ -214,11 +250,17 @@ nav > ul > li {
 	flex-wrap: wrap;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 900px) {
 	.hero__react,
 	.hero__icons,
 	.hero__badges {
 		gap: 2vw;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.hero__badges {
+		margin-bottom: 1.5vh;
 	}
 }
 
@@ -241,6 +283,12 @@ nav > ul > li {
 @media screen and (max-width: 440px) {
 	.embla {
 		max-width: 200px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.embla {
+		margin-bottom: 4vh;
 	}
 }
 
@@ -301,7 +349,7 @@ main  {
 	margin: 0 auto;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 900px) {
 	main {
 		display: flex;
 		gap: 10vh;
@@ -341,8 +389,32 @@ footer {
 	padding: 2vh 1.5vw;
 }
 
+@media screen and (max-width: 390px) {
+	.footer__fact {
+		min-width: 200px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.footer__fact {
+		margin-bottom: 6vh;
+	}
+}
+
 .footer__rating {
-	margin-bottom: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
+	font-weight: 200;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 4vh;
+	font-style: italic;
+	gap: 1vh;
+}
+
+@media screen and (max-width: 900px) {
+	.footer__rating {
+		margin-bottom: 6vh;
+	}
 }
 
 .footer__icons {

@@ -47,8 +47,18 @@ const animation = {
                         <Icon className="hover" icon="mdi:language-css3" width="32" height="32" />
                     </div>
                     <div className="hero__icons">
-                        <Icon icon="iwwa:file-pdf" className="hover" width="32" height="32" />  
-                        <span>CV</span>
+                        <a href="https://t.me/ste1v0" target="_blank" rel="noreferrer">
+                            <div className="hero__telegram">
+                            <Icon icon="ic:twotone-telegram" className="hover rotate" width="32" height="32"/> 
+                            Telegram
+                            </div>
+                        </a>
+                        <a href="https://ste1v0.dev/cv_stepan_serov_fe_developer.pdf" target="_blank" rel="noreferrer">
+                            <div className="hero__resume">
+                                <Icon icon="iwwa:file-pdf" className="hover" width="32" height="32" /> 
+                                Resume
+                            </div>
+                        </a>
                     </div>
                     
 

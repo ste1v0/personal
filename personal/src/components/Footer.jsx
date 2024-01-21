@@ -46,9 +46,12 @@ export default function Footer({lightMode}) {
             </Placeholder>
             </>}
             <div className="footer__rating">
-            {rating ? <SlAnimation name="jackInTheBox" duration={1000} iterations={1} play ><div>Thanks!</div></SlAnimation> : <SlRating className={lightMode ? `light rating--${hover}` : `dark rating--${hover}`} label="Rating" getSymbol={getSymbol} onSlHover={(event) => setHover(event.target.value)} onSlChange={() => setRating(true)} />}
+                <span>Rate this page</span>
+                {rating ? <SlAnimation name="jackInTheBox" duration={1000} iterations={1} play ><div>Thanks!</div></SlAnimation> : <SlRating className={lightMode ? `light rating--${hover}` : `dark rating--${hover}`} label="Rating" getSymbol={getSymbol} onSlHover={(event) => setHover(event.target.value)} onSlChange={() => setRating(true)} />}
             </div>
-            <div className={lightMode ? "footer__icons footer__github--dark pointer" : "footer__icons footer__github--light pointer"}></div>
+            <a href="https://github.com/ste1v0" target="_blank" rel="noreferrer">
+                <div className={lightMode ? "footer__icons footer__github--dark pointer" : "footer__icons footer__github--light pointer"}></div>
+            </a>
         </footer>
     )
 }
