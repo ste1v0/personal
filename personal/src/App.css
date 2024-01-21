@@ -240,7 +240,7 @@ nav > ul > li {
 
 @media screen and (max-width: 440px) {
 	.embla {
-		width: 70%;
+		max-width: 200px;
 	}
 }
 
@@ -267,14 +267,14 @@ nav > ul > li {
 }
 
 .boxd {
-	background-image: url('./boxd-min.png');
+	background-image: url('./assets/boxd-min.png');
 	background-size: cover;
 	border-radius: 7px;
 	padding: 6rem;
 }
 
 .gamingnews {
-	background-image: url('./rssgames-min.png');
+	background-image: url('./assets/rssgames-min.png');
 	background-size: cover;
 	border-radius: 7px;
 	padding: 6rem;
