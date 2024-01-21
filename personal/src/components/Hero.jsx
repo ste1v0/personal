@@ -1,11 +1,16 @@
 import { useState } from 'react'
-import { SlAnimation, SlCarousel, SlCarouselItem } from '@shoelace-style/shoelace/dist/react';
+import { SlAnimation } from '@shoelace-style/shoelace/dist/react';
 import { Icon } from '@iconify/react';
+import useEmblaCarousel from 'embla-carousel-react';
+import Autoplay from 'embla-carousel-autoplay'
 
 export default function Hero({lightMode, fontIncreased}) {
 
 const [animate, setAnimate] = useState(false)
 const [count, setCount] = useState(0)
+
+const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay()])
+
 
 function handleClick() {
     setCount(prevValue => prevValue + 1)
@@ -30,7 +35,6 @@ const animation = {
                         <span className="hero__tap hover">{animate ? '' : '← Tap!'}</span>
                     </SlAnimation>
                     </div>
-                    {/* <div style={{backgroundColor: !lightMode ? 'whitesmoke' : 'purple', color: lightMode ? 'white' : 'black'}}className="hero__count capitalize">Taps count: {count}</div> */}
                     <div className="hero__text">
                         <div className="hero__name" style={{fontSize: fontIncreased ? 'var(--name-increased)': 'var(--name-default)'}}>Stepan Serov</div>
                         <span className="hero__position" style={{fontSize: fontIncreased ? 'var(--position-increased)': 'var(--position-default)'}}>Frontend Developer</span>
@@ -51,25 +55,12 @@ const animation = {
                 </section>
                 <section className="hero__right">
                     <h2 className="kaushan-script-regular" style={{fontSize: fontIncreased ? 'var(--title-increased)': 'var(--title-default)'}}>Latest projects</h2>
-                        <SlCarousel autoplay loop pagination mouseDragging className="hero__carousel">
-                            <SlCarouselItem>
-                                <img
-                                    className="hero__carousel-pic"
-                                    alt="Games Database"
-                                    src="./boxd-min.png"
-                                />
-                                <a href="https://fabulous-marigold-8f871e.netlify.app"><div style={{color: lightMode ? 'black' : 'white'}} className="hero__carousel-title">Games Database</div></a>
-                            </SlCarouselItem>
-                            <SlCarouselItem>
-                                <img
-                                    className="hero__carousel-pic"
-                                    alt="Gaming News"
-                                    src="./rssgames-min.png"
-                                        
-                                />
-                                <a href="https://stunning-shortbread-4017c3.netlify.app"><div style={{color: lightMode ? 'black' : 'white'}} className="hero__carousel-title">Gaming News</div></a>
-                            </SlCarouselItem>
-                        </SlCarousel>
+                    <div className="embla" ref={emblaRef}>
+                        <div className="embla__container">
+                            <div className="embla__slide boxd"><span className="embla__slide-text"><a href="https://fabulous-marigold-8f871e.netlify.app/" target="_blank">→ Games Database</a></span></div>
+                            <div className="embla__slide gamingnews"><span className="embla__slide-text"><a href="https://stunning-shortbread-4017c3.netlify.app" target="_blank">→ Gaming News</a></span></div>
+                        </div>   
+                    </div>
                 </section>
             </main>
         </>
