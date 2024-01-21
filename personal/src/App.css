@@ -5,21 +5,21 @@
 	--increased: 1.1rem;
 	--title-default: 3rem;
 	--title-increased: 4rem;
+	--name-default: 1.2rem;
+	--name-increased: 1.4rem;
+	--position-default: 0.9rem;
+	--position-increased: 1.1rem;
 	font-family: 'DM Sans', sans-serif;
 }
 
-a:link {
-	text-decoration: none;
-}
-
-.nabla {
-	font-family: "Nabla", system-ui;
-	font-optical-sizing: auto;
+.kaushan-script-regular {
+	font-family: "Kaushan Script", cursive;
 	font-weight: 400;
 	font-style: normal;
-	font-variation-settings:
-	  "EDPT" 90,
-	  "EHLT" 12;
+  }
+
+a:link {
+	text-decoration: none;
 }
 
 sl-rating::part(base):hover {
@@ -185,6 +185,41 @@ nav > ul > li {
 
 .hero__profile__pic--light {
 	background-image: url('./assets/profile-light.JPG');
+}
+
+.hero__icons {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.hero__text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.hero__position {
+	font-weight: 200;
+	text-transform: uppercase;
+}
+
+.hero__name {
+	font-weight: 600;
+}
+
+.hero__badges {
+	display: flex;
+	gap: 0.5vw;
+	flex-wrap: wrap;
+}
+
+@media screen and (max-width: 760px) {
+	.hero__react,
+	.hero__icons,
+	.hero__badges {
+		gap: 2vw;
+	}
 }
 
 .hero__right {
