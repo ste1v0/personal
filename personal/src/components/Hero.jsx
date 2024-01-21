@@ -53,21 +53,21 @@ const animation = {
                     <h2 className="kaushan-script-regular" style={{fontSize: fontIncreased ? 'var(--title-increased)': 'var(--title-default)'}}>Latest projects</h2>
                         <SlCarousel autoplay loop pagination mouseDragging className="hero__carousel">
                             <SlCarouselItem>
-                                <a href="https://fabulous-marigold-8f871e.netlify.app"><div style={{color: lightMode ? 'black' : 'white'}} className="hero__carousel-title">Games Database</div></a>
                                 <img
                                     className="hero__carousel-pic"
                                     alt="Games Database"
                                     src="./boxd-min.png"
                                 />
+                                <a href="https://fabulous-marigold-8f871e.netlify.app"><div style={{color: lightMode ? 'black' : 'white'}} className="hero__carousel-title">Games Database</div></a>
                             </SlCarouselItem>
                             <SlCarouselItem>
-                            <a href="https://stunning-shortbread-4017c3.netlify.app"><div style={{color: lightMode ? 'black' : 'white'}} className="hero__carousel-title">Gaming News</div></a>
                                 <img
                                     className="hero__carousel-pic"
                                     alt="Gaming News"
                                     src="./rssgames-min.png"
                                         
                                 />
+                                <a href="https://stunning-shortbread-4017c3.netlify.app"><div style={{color: lightMode ? 'black' : 'white'}} className="hero__carousel-title">Gaming News</div></a>
                             </SlCarouselItem>
                         </SlCarousel>
                 </section>
