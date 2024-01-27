@@ -157,8 +157,8 @@ nav > ul > li {
 	}
 }
 
-.header__text {
-	font-weight: 600;
+.header__link {
+	font-weight: 900;
 	text-transform: uppercase;
 	margin-right: auto;
 	padding-left: 3vw;

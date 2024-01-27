@@ -11,9 +11,7 @@ export default function Header({lightMode, setLightMode, fontIncreased, setFontI
         <header className="fade-in-header">
             <nav style={{backgroundColor: lightMode ? '#282836' : '#CACAD3', color: lightMode ? 'white' : 'black'}}>
                 <ul className="header__container">
-                    <li style={{backgroundColor: lightMode ? '#141515' : '#EEF0F3'}} className="header__text">ste1v0.dev </li>
-                    
-                    
+                    <li style={{backgroundColor: lightMode ? '#141515' : '#EEF0F3'}} className="header__link">ste1v0.dev</li>
                     <li className="material-symbols-outlined hover pointer" onClick={changeFont}>
                         <span>
                             {fontIncreased ? "text_decrease" : "text_increase"}
