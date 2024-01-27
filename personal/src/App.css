@@ -128,8 +128,18 @@ sl-rating.dark {
 		);
 }
 
+header {
+	padding: 3vh 0 0 0;
+}
+
+nav {
+	width: 97%;
+	margin: 0 auto 15vh auto;
+	border-radius: 7px;
+}
+
 nav > ul > li {
-	padding: 1rem 0;
+	padding: 1.4rem 0;
 }
 
 .header__container {
@@ -138,6 +148,7 @@ nav > ul > li {
 	gap: 2vw;
 	justify-content: flex-end;
 	margin-right: clamp(1rem, -6.39rem + 13.14vw, 9.375rem);
+	margin-bottom: 0;
 }
 
 @media screen and (max-width: 900px) {
@@ -145,6 +156,12 @@ nav > ul > li {
 		gap: 5vw;
 		justify-content: center;
 	}
+}
+
+.header__text {
+	text-transform: uppercase;
+	margin-right: auto;
+	align-self: center;
 }
 
 .hero__left {
