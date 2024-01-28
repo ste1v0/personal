@@ -40,26 +40,10 @@ const animation = {
                     <div className="hero__badges">
                         <Icon className="hover rotate" icon="mdi:react" width="32" height="32" />
                         <Icon className="hover" icon="mdi:language-javascript" width="32" height="32" />
-                        <Icon className="hover" icon="mdi:tailwind" width="32" height="32" />
+                        <Icon className="hover" icon="mdi:git" width="32" height="32" />
                         <Icon className="hover" icon="mdi:language-html5" width="32" height="32" />
                         <Icon className="hover" icon="mdi:language-css3" width="32" height="32" />
                     </div>
-                    <div className="hero__icons">
-                        <a href="https://t.me/ste1v0" target="_blank" rel="noreferrer">
-                            <div className="hero__telegram">
-                            <Icon icon="ic:twotone-telegram" className="hover rotate" width="32" height="32"/> 
-                            Telegram
-                            </div>
-                        </a>
-                        <a href="https://ste1v0.dev/serov_frontend.pdf" target="_blank" rel="noreferrer">
-                            <div className="hero__resume">
-                                <Icon icon="iwwa:file-pdf" className="hover" width="32" height="32" /> 
-                                Resume
-                            </div>
-                        </a>
-                    </div>
-                    
-
                 </section>
                 <section className="hero__right">
                     <h2 className="kaushan-script-regular" style={{fontSize: fontIncreased ? 'var(--title-increased)': 'var(--title-default)'}}>Latest projects</h2>

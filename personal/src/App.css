@@ -141,30 +141,50 @@ nav > ul > li {
 	padding: 1.4rem 0;
 }
 
-.header__container {
+.header__features {
 	display: flex;
+	align-items: center;
+	gap: 2.5vw;
+	padding: 0;
 	list-style: none;
-	gap: 2vw;
-	justify-content: flex-end;
 	margin-bottom: 0;
-	padding: 0 3vw 0 0;
 }
 
 @media screen and (max-width: 900px) {
-	.header__container {
+	.header__features {
 		gap: 5vw;
-		justify-content: center;
 	}
 }
 
-.header__link {
+.header__tg,
+.header__cv {
+	font-weight: 600;
+	color: inherit
+}
+
+.m-right {
+	margin-right: 0.3vw;
+}
+
+.header__homepage {
 	font-weight: 900;
 	text-transform: uppercase;
-	margin-right: auto;
 	padding-left: 3vw;
 	padding-right: 3vw;
 	border-top-left-radius: 7px;
 	border-bottom-left-radius: 7px;
+}
+
+.header__link {
+	display: flex;
+	gap: .3vw;
+}
+
+.header__right {
+	display: flex;
+	gap: 2.5vw;
+	margin-left: auto;
+	padding-right: 2.5vw;
 }
 
 .hero__left {
@@ -175,10 +195,6 @@ nav > ul > li {
 	gap: 2.5vh;
 }
 
-.hero__count {
-	padding: .65rem .75rem;
-	border-radius: 12px;
-}
 
 .hero__profile {
 	position: relative;
@@ -212,22 +228,6 @@ nav > ul > li {
 	flex-direction: column;
 	flex-wrap: wrap;
 	gap: 1vh;
-}
-
-.hero__icons > a {
-	color: inherit;
-}
-
-.hero__telegram {
-	display: flex;
-	gap: 0.5vw;
-	align-items: center;
-}
-
-.hero__resume {
-	display: flex;
-	gap: 0.5vw;
-	align-items: center;
 }
 
 @media screen and (max-width: 900px) {
