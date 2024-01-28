@@ -417,7 +417,7 @@ footer {
 
 @media screen and (max-width: 900px) {
 	.footer__fact {
-		margin-bottom: 6vh;
+		margin-bottom: 10vh;
 	}
 }
 
@@ -433,7 +433,7 @@ footer {
 
 @media screen and (max-width: 900px) {
 	.footer__rating {
-		margin-bottom: 6vh;
+		margin-bottom: 10vh;
 	}
 }
 
