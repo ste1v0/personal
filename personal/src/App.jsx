@@ -6,8 +6,8 @@ import Footer from './components/Footer'
 
 function App() {
 
-	const [fontIncreased, setFontIncreased] = useState(localStorage.getItem('font') || false)
-	const [lightMode, setLightMode] = useState(localStorage.getItem('mode') || false)
+	const [fontIncreased, setFontIncreased] = useState(localStorage.getItem('font') === 'true')
+	const [lightMode, setLightMode] = useState(localStorage.getItem('mode') === 'true')
 
 	return (
 		<div 
