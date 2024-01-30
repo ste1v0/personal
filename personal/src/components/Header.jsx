@@ -4,11 +4,14 @@ export default function Header({lightMode, setLightMode, fontIncreased, setFontI
     
     function changeMode() {
         setLightMode(prevValue => !prevValue)
+        localStorage.setItem('mode', !lightMode)
     }
 
     function changeFont() {
         setFontIncreased(prevValue => !prevValue)
+        localStorage.setItem('font', !fontIncreased)
     }
+
     return (
         <header className="fade-in-header">
             <nav style={{backgroundColor: lightMode ? '#282836' : '#CACAD3', color: lightMode ? 'white' : 'black'}}>
