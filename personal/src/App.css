@@ -16,7 +16,7 @@
 	font-family: "Kaushan Script", cursive;
 	font-weight: 400;
 	font-style: normal;
-  }
+}
 
 a:link {
 	text-decoration: none;
@@ -308,9 +308,21 @@ nav > ul > li {
 	overflow: hidden;
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 1050px) {
 	.embla {
-		max-width: 200px;
+		max-width: 450px;
+	}
+}
+
+@media screen and (max-width: 530px) {
+	.embla {
+		max-width: 350px;
+	}
+}
+
+@media screen and (max-width: 410px) {
+	.embla {
+		max-width: 250px;
 	}
 }
 
@@ -322,12 +334,19 @@ nav > ul > li {
 
 .embla__container {
 	display: flex;
+	gap: 5px;
 }
 
 .embla__slide {
-	flex: 0 0 100%;
+	flex: 0 0 75%;
 	min-width: 0;
 	position: relative;
+}
+
+@media screen and (max-width: 700px) {
+	.embla__container {
+		max-width: 450px;
+	}
 }
 
 .embla__slide-text {
@@ -345,6 +364,7 @@ nav > ul > li {
 .boxd {
 	background-image: url('./assets/boxd-min.png');
 	background-size: cover;
+	background-position: center;
 	border-radius: 7px;
 	padding: 6rem;
 }
@@ -352,6 +372,14 @@ nav > ul > li {
 .gamingnews {
 	background-image: url('./assets/rssgames-min.png');
 	background-size: cover;
+	border-radius: 7px;
+	padding: 6rem;
+}
+
+.vk {
+	background-image: url('./assets/vk-min.png');
+	background-size: cover;
+	background-position: center;
 	border-radius: 7px;
 	padding: 6rem;
 }
@@ -374,7 +402,7 @@ main  {
 	justify-content: space-around;
 	flex-wrap: wrap;
 	width: 90%;
-	margin: 0 auto;
+	margin: 10vh auto 10vh auto;
 }
 
 @media screen and (max-width: 900px) {
