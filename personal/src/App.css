@@ -334,7 +334,13 @@ nav > ul > li {
 
 .embla__container {
 	display: flex;
-	gap: 5px;
+	gap: 2vw;
+}
+
+@media screen and (max-width: 530px) {
+	.embla__container {
+		gap: 4vw;
+	}
 }
 
 .embla__slide {
