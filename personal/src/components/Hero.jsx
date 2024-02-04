@@ -49,9 +49,9 @@ const animation = {
                     <h2 className="kaushan-script-regular" style={{fontSize: fontIncreased ? 'var(--title-increased)': 'var(--title-default)'}}>Latest projects</h2>
                     <div className="embla" ref={emblaRef}>
                         <div className="embla__container">
-                            <div className="embla__slide vk"><span className="embla__slide-text"><a href="https://thriving-dolphin-43c94f.netlify.app" target="_blank" rel="noreferrer">→ VK Frontend Challenge</a></span></div>
-                            <div className="embla__slide boxd"><span className="embla__slide-text"><a href="https://fabulous-marigold-8f871e.netlify.app" target="_blank" rel="noreferrer">→ Games Database</a></span></div>
-                            <div className="embla__slide gamingnews"><span className="embla__slide-text"><a href="https://stunning-shortbread-4017c3.netlify.app" target="_blank" rel="noreferrer">→ Gaming News</a></span></div>
+                            <div className="embla__slide vk"><span className="embla__slide-text"><a href="https://github.com/ste1v0/frontend-challenge" target="_blank" rel="noreferrer">→ VK Frontend Challenge</a></span></div>
+                            <div className="embla__slide boxd"><span className="embla__slide-text"><a href="https://github.com/ste1v0/boxd" target="_blank" rel="noreferrer">→ Games Database</a></span></div>
+                            <div className="embla__slide gamingnews"><span className="embla__slide-text"><a href="https://github.com/ste1v0/gaming-news" target="_blank" rel="noreferrer">→ Gaming News</a></span></div>
                         </div>   
                     </div>
                 </section>
