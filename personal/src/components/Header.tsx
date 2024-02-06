@@ -1,15 +1,22 @@
 import { Icon } from '@iconify/react';
 
-export default function Header({lightMode, setLightMode, fontIncreased, setFontIncreased}) {
+type HeaderProps = {
+    lightMode: boolean,
+    setLightMode: React.Dispatch<React.SetStateAction<boolean>>
+    fontIncreased: boolean,
+    setFontIncreased: React.Dispatch<React.SetStateAction<boolean>>
+}
+
+export default function Header({lightMode, setLightMode, fontIncreased, setFontIncreased} : HeaderProps) {
     
     function changeMode() {
         setLightMode(prevValue => !prevValue)
-        localStorage.setItem('mode', !lightMode)
+        localStorage.setItem('mode', String(!lightMode))
     }
 
     function changeFont() {
         setFontIncreased(prevValue => !prevValue)
-        localStorage.setItem('font', !fontIncreased)
+        localStorage.setItem('font', String(!fontIncreased))
     }
 
     return (
