@@ -4,13 +4,17 @@ import { SlRating, SlAnimation } from '@shoelace-style/shoelace/dist/react';
 
 import Placeholder from 'react-bootstrap/Placeholder';
 
-export default function Footer({lightMode}) {
+type FooterProps = {
+    lightMode: boolean
+}
+
+export default function Footer({ lightMode } : FooterProps) {
     const [fact, setFact] = useState([])
     const [reload, setReload] = useState(false)
     const [rating, setRating] = useState(0)
     const [hover, setHover] = useState('')
 
-    function getSymbol(value) {
+    function getSymbol(value:number) {
         const icons = ['emoji-angry', 'emoji-frown', 'emoji-expressionless', 'emoji-smile', 'emoji-laughing'];
         return `<sl-icon name="${icons[value - 1]}"></sl-icon>`;
     }

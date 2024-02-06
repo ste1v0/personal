@@ -4,7 +4,12 @@ import { Icon } from '@iconify/react';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay'
 
-export default function Hero({lightMode, fontIncreased}) {
+type HeroProps = {
+    lightMode: boolean,
+    fontIncreased: boolean
+}
+
+export default function Hero({lightMode, fontIncreased} : HeroProps) {
 
 const [animate, setAnimate] = useState(false)
 
