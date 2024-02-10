@@ -42,13 +42,15 @@ export default function Footer({ lightMode } : FooterProps) {
             </div>
             {fact.length > 0 
             ? <div style={{border: lightMode ? '1px dashed black' : '1px dashed white'}} className="footer__fact"> {fact}</div> 
-            : <><Placeholder animation="glow">
-                <Placeholder style={{width: '30vw'}} />{' '}
-            </Placeholder>
-            <Placeholder animation="glow">
-                <Placeholder style={{width: '30vw', marginBottom: '2vh'}} />{' '}
-            </Placeholder>
-            </>}
+            : <>
+                <Placeholder animation="glow">
+                    <Placeholder style={{width: '30vw'}} />{' '}
+                </Placeholder>
+                <Placeholder animation="glow">
+                    <Placeholder style={{width: '30vw', marginBottom: '2vh'}} />{' '}
+                </Placeholder>
+            </>
+            }
             <div className="footer__rating">
                 <span>Rate this page</span>
                 {rating ? <SlAnimation name="jackInTheBox" duration={1000} iterations={1} play ><div>Thanks!</div></SlAnimation> : <SlRating className={lightMode ? `light rating--${hover}` : `dark rating--${hover}`} label="Rating" getSymbol={getSymbol} onSlHover={(event) => setHover(event.target.value)} onSlChange={() => setRating(true)} />}
