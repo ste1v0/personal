@@ -227,20 +227,6 @@ nav > ul > li {
 	background-image: url('./assets/profile-light.JPG');
 }
 
-.hero__icons {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	gap: 1vh;
-}
-
-@media screen and (max-width: 900px) {
-	.hero__telegram,
-	.hero__resume {
-		gap: 2vw;
-	}
-}
-
 .hero__text {
 	display: flex;
 	flex-direction: column;
@@ -340,6 +326,12 @@ nav > ul > li {
 	align-items: center;
 }
 
+@media screen and (max-width: 900px) {
+	.hero__fourth {
+		margin-bottom: 5vh;
+	}
+}
+
 .hero__contacts {
 	display: flex;
 	width: 70%;
@@ -347,7 +339,6 @@ nav > ul > li {
 	justify-content: space-around;
 	align-items: center;
 	gap: 5vh 0vw;
-	margin-bottom: 5vh;
 }
 
 .hero__contact-item {
@@ -358,17 +349,12 @@ nav > ul > li {
 	border-radius: 50%;
 }
 
-.hero__caption {
-	margin-top: 4vh;
-}
-
 main  {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	flex-wrap: wrap;
 	gap: 10vh;
-	width: 100%;
 	margin: 10vh auto 0 auto;
 }
 
@@ -377,7 +363,7 @@ footer {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 5vh;
+	padding-bottom: 5vh;
 }
 
 .footer__title-container {
