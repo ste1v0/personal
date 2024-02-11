@@ -5,17 +5,11 @@
 	--increased: 1.1rem;
 	--title-default: 3rem;
 	--title-increased: 3.6rem;
-	--name-default: 1.2rem;
-	--name-increased: 1.4rem;
-	--position-default: 0.9rem;
-	--position-increased: 1.1rem;
+	--name-default: 3.7rem;
+	--name-increased: 3.9rem;
+	--position-default: 1.1rem;
+	--position-increased: 1.3rem;
 	font-family: 'DM Sans', sans-serif;
-}
-
-.kaushan-script-regular {
-	font-family: "Kaushan Script", cursive;
-	font-weight: 400;
-	font-style: normal;
 }
 
 a:link {
@@ -195,10 +189,10 @@ nav > ul > li {
 	padding-right: 2.5vw;
 }
 
-.hero__left {
+.hero__first {
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: column;
+	justify-content: space-evenly;
 	align-items: center;
 	gap: 2.5vh;
 }
@@ -207,7 +201,7 @@ nav > ul > li {
 .hero__profile {
 	position: relative;
 	background-size: cover;
-	padding: 5rem;
+	padding: 6rem;
 	border-radius: 10px;
 	box-shadow: 4px 1px 15px black;
 }
@@ -215,6 +209,7 @@ nav > ul > li {
 .hero__profile:hover {
 	box-shadow: 0 0 20px;
 }
+
 .hero__tap {
 	font-weight: 200;
 	position: absolute;
@@ -263,7 +258,10 @@ nav > ul > li {
 }
 
 .hero__name {
-	font-weight: 600;
+	font-family: "DM Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
 }
 
 @media screen and (max-width: 900px) {
@@ -272,27 +270,14 @@ nav > ul > li {
 	}
 }
 
-.hero__badges {
-	display: flex;
-	gap: 0.5vw;
-	flex-wrap: wrap;
-}
-
 @media screen and (max-width: 900px) {
 	.hero__react,
-	.hero__icons,
-	.hero__badges {
+	.hero__icons {
 		gap: 2vw;
 	}
 }
 
-@media screen and (max-width: 900px) {
-	.hero__badges {
-		margin-bottom: 1.5vh;
-	}
-}
-
-.hero__right {
+.hero__second {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
@@ -304,119 +289,89 @@ nav > ul > li {
 	margin-bottom: 4vh;
 }
 
-.embla {
-	overflow: hidden;
+.sample-slider {
+	width: 100vw;
+	background: rgba(0, 0, 0, .2);
 }
 
-@media screen and (max-width: 1050px) {
-	.embla {
-		max-width: 450px;
-	}
+.sample-slider .swiper-wrapper{
+    transition-timing-function: linear;
+	padding: 3vh 0;
 }
 
-@media screen and (max-width: 530px) {
-	.embla {
-		max-width: 350px;
-	}
-}
-
-@media screen and (max-width: 410px) {
-	.embla {
-		max-width: 250px;
-	}
-}
-
-@media screen and (max-width: 900px) {
-	.embla {
-		margin-bottom: 4vh;
-	}
-}
-
-.embla__container {
+.hero__third {
 	display: flex;
-	gap: 2vw;
+	flex-direction: column;
+	align-items: center;
+	width: 90%;
+	margin: 0vh auto 10vh auto;
 }
 
-@media screen and (max-width: 530px) {
-	.embla__container {
-		gap: 4vw;
-	}
+.hero__projects-title,
+.hero__contacts-title {
+	font-family: "Kaushan Script", cursive;
+	font-weight: 400;
+	font-style: normal;
+	margin-bottom: 10vh;
 }
 
-.embla__slide {
-	flex: 0 0 75%;
-	min-width: 0;
-	position: relative;
+.hero__projects {
+	display: flex;
+	width: 90%;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 5vw;
 }
 
-@media screen and (max-width: 700px) {
-	.embla__container {
-		max-width: 450px;
-	}
-}
-
-.embla__slide-text {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	text-align: center;
-	padding: 6px;
-	background: black;
-	width: 100%;
-	border-bottom-left-radius: 7px;
-	border-bottom-right-radius: 7px;
-}
-
-.boxd {
-	background-image: url('./assets/boxd-min.png');
-	background-size: cover;
-	background-position: center;
+.hero__project-item {
+	display: flex;
+	flex-direction: column;
+	padding: 1.3rem 1.5rem;
 	border-radius: 7px;
-	padding: 6rem;
+	justify-content: space-evenly;
+	flex-grow: 1;
 }
 
-.gamingnews {
-	background-image: url('./assets/rssgames-min.png');
-	background-size: cover;
-	border-radius: 7px;
-	padding: 6rem;
+.hero__fourth {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-.vk {
-	background-image: url('./assets/vk-min.png');
-	background-size: cover;
-	background-position: center;
-	border-radius: 7px;
-	padding: 6rem;
+.hero__contacts {
+	display: flex;
+	width: 70%;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.hero__contact-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 50px;
+	border-radius: 50%;
 }
 
 .hero__caption {
 	margin-top: 4vh;
 }
 
-.hero__right > a {
-	text-decoration: none;
-}
-
-sl-carousel-item {
-	max-height: 90px;
-	border-radius: 7px;
-}
-
 main  {
 	display: flex;
+	flex-direction: column;
 	justify-content: space-around;
 	flex-wrap: wrap;
-	width: 90%;
+	gap: 10vh;
+	width: 100%;
 	margin: 10vh auto 10vh auto;
 }
 
 @media screen and (max-width: 900px) {
 	main {
 		display: flex;
-		gap: 10vh;
-		flex-direction: column;
-		align-items: center;
+		gap: 15vh;
 	}
 }
 
