@@ -69,7 +69,7 @@ const darkTheme = {
                             <SwiperSlide><Icon className="sample-item hover" icon="mdi:language-html5" width="32" height="32" /></SwiperSlide>   
                         </Swiper>
                 </section>
-                <section className="hero__third">
+                <section className="hero__third" id="projects">
                 <h2 className="hero__projects-title" style={{fontSize: fontIncreased ? 'var(--title-increased)': 'var(--title-default)'}}>Latest projects</h2>
                         <div className="hero__projects">
                             <div className="hero__project-item" style={lightMode ? lightTheme : darkTheme}>
@@ -113,7 +113,7 @@ const darkTheme = {
                             </div>
                         </div>   
                 </section>
-                <section className="hero__fourth">
+                <section className="hero__fourth" id="contacts">
                 <h2 className="hero__contacts-title" style={{fontSize: fontIncreased ? 'var(--title-increased)': 'var(--title-default)'}}>Contacts</h2>
                         <div className="hero__contacts">
                             <div style={lightMode ? lightTheme : darkTheme} className="hero__contact-item scale">

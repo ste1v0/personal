@@ -1,4 +1,6 @@
 import { Icon } from '@iconify/react';
+import { useRef, useEffect } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 
 type HeaderProps = {
     lightMode: boolean,
@@ -8,6 +10,22 @@ type HeaderProps = {
 }
 
 export default function Header({lightMode, setLightMode, fontIncreased, setFontIncreased} : HeaderProps) {
+
+    const location = useLocation()
+    const lastHash = useRef('')
+
+    useEffect(function() {
+        if (location.hash) {
+            lastHash.current = location.hash.slice(1)
+        }
+
+        if (lastHash.current && document.getElementById(lastHash.current)) {
+            setTimeout(function() {
+                document.getElementById(lastHash.current)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                lastHash.current = ''
+            }, 100)
+        }
+    }, [location])
     
     function changeMode() {
         setLightMode(prevValue => !prevValue)
@@ -25,12 +43,10 @@ export default function Header({lightMode, setLightMode, fontIncreased, setFontI
                 <ul className="header__features">
                     <li style={{backgroundColor: lightMode ? '#141515' : '#EEF0F3'}} className="header__homepage"><Icon icon="line-md:home-md-twotone-alt" width="24" height="24" /></li>
                     <li className="header__link">
-                        <Icon icon="iwwa:file-pdf" className="hover" width="24" height="24" />
-                        <a className="header__cv" href="https://ste1v0.dev/serov_frontend.pdf" target="_blank" rel="noreferrer">CV</a>
+                        <Link to="#projects">Projects</Link>
                      </li>
                     <li className="header__link">
-                        <Icon icon="ic:twotone-telegram" className="hover rotate" width="24" height="24"/> 
-                        <a className="header__tg" href="https://t.me/ste1v0" target="_blank" rel="noreferrer">Telegram</a>
+                        <Link to="#contacts">Contacts</Link>
                     </li>
                     <li className="header__right">
                         <span className="material-symbols-outlined hover pointer right" onClick={changeFont}>
