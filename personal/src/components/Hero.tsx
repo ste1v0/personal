@@ -95,7 +95,7 @@ const darkTheme = {
                             </div>
                             <div className="hero__project-item" style={lightMode ? lightTheme : darkTheme}>
                                 <h4>Boxd</h4>
-                                <p>Games database</p>
+                                <p>Games database including most popular titles</p>
                                 <ul>
                                     <li>Hotkeys</li>
                                     <li>Loader</li>

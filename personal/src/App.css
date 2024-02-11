@@ -157,6 +157,12 @@ nav > ul > li {
 	}
 }
 
+.header__features > li > a {
+	color: inherit;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
 .header__tg,
 .header__cv {
 	font-weight: 600;
