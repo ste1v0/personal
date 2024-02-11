@@ -150,7 +150,7 @@ nav > ul > li {
 	}
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 500px) {
 	.header__features {
 		font-size: .9rem;
 		gap: 2.5vw;
@@ -161,12 +161,6 @@ nav > ul > li {
 	color: inherit;
 	text-transform: uppercase;
 	font-weight: 500;
-}
-
-.header__tg,
-.header__cv {
-	font-weight: 600;
-	color: inherit
 }
 
 .m-right {
@@ -186,6 +180,7 @@ nav > ul > li {
 	display: flex;
 	gap: .3vw;
 	align-items: center;
+	text-wrap: nowrap;
 }
 
 .header__right {
@@ -351,6 +346,8 @@ nav > ul > li {
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
+	gap: 5vh 0vw;
+	margin-bottom: 5vh;
 }
 
 .hero__contact-item {
@@ -372,14 +369,7 @@ main  {
 	flex-wrap: wrap;
 	gap: 10vh;
 	width: 100%;
-	margin: 10vh auto 10vh auto;
-}
-
-@media screen and (max-width: 900px) {
-	main {
-		display: flex;
-		gap: 15vh;
-	}
+	margin: 10vh auto 0 auto;
 }
 
 footer {

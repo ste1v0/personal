@@ -53,7 +53,7 @@ export default function Header({lightMode, setLightMode, fontIncreased, setFontI
                         <Link to="#contacts">Contacts</Link>
                     </li>
                     <li className="header__link">
-                        <a href="https://github.com/lydiahallie/javascript-questions#1-whats-the-output" target="_blank" rel="noreferrer">JS ES6 Interview Prep</a>
+                        <a href="https://github.com/lydiahallie/javascript-questions#1-whats-the-output" target="_blank" rel="noreferrer">JS <Icon icon="lets-icons:external" /></a>
                     </li>   
                     <li className="header__right">
                         <span className="material-symbols-outlined hover pointer right" onClick={changeFont}>
