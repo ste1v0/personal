@@ -152,7 +152,14 @@ nav > ul > li {
 
 @media screen and (max-width: 500px) {
 	.header__features {
-		font-size: .9rem;
+		font-size: .7rem;
+		gap: 2.5vw;
+	}
+}
+
+@media screen and (max-width: 345px) {
+	.header__features {
+		font-size: .5rem;
 		gap: 2.5vw;
 	}
 }
