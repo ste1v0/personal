@@ -48,6 +48,9 @@ export default function Header({lightMode, setLightMode, fontIncreased, setFontI
                     <li className="header__link">
                         <Link to="#contacts">Contacts</Link>
                     </li>
+                    <li className="header__link">
+                        <Link to="https://github.com/lydiahallie/javascript-questions#1-whats-the-output">JS ES6 Interview Prep</Link>
+                    </li>   
                     <li className="header__right">
                         <span className="material-symbols-outlined hover pointer right" onClick={changeFont}>
                                 {fontIncreased ? "text_decrease" : "text_increase"}
