@@ -58,7 +58,7 @@ const darkTheme = {
                             loop={true}
                             modules={[Autoplay]}
                             autoplay={{delay: 0}}
-                            slidesPerView={6}
+                            slidesPerView={5}
                             speed={7000}
                         >
                             <SwiperSlide><Icon className="sample-item hover" icon="mdi:language-css3" width="32" height="32" /></SwiperSlide> 
