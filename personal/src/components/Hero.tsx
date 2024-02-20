@@ -72,6 +72,14 @@ const darkTheme = {
                 <section className="hero__third" id="projects">
                 <h2 className="hero__projects-title" style={{fontSize: fontIncreased ? 'var(--title-increased)': 'var(--title-default)'}}>Latest projects</h2>
                         <div className="hero__projects">
+                        <div className="hero__project-item" style={lightMode ? lightTheme : darkTheme}>
+                                <h4>React Course</h4>
+                                <p>In progress</p>
+                                <ul>
+                                    <li>TBA</li>
+                                </ul>
+                                <a href="https://github.com/ste1v0/QSOFT-Frontend-Task" target="_blank" rel="noreferrer">TBA</a>
+                            </div>
                             <div className="hero__project-item" style={lightMode ? lightTheme : darkTheme}>
                                 <h4>QSOFT Frontend Task</h4>
                                 <p>Adaptive CSS page</p>
