@@ -74,11 +74,13 @@ const darkTheme = {
                         <div className="hero__projects">
                             <div className="hero__project-item" style={lightMode ? lightTheme : darkTheme}>
                                 <h4>Valantis Frontend Task</h4>
-                                <p>In progress</p>
+                                <p>Products catalog</p>
                                 <ul>
-                                    <li>TBA</li>
+                                    <li>Filters</li>
+                                    <li>Pagination</li>
+                                    <li>TypeScript</li>
                                 </ul>
-                                <a href="#" target="_blank" rel="noreferrer">TBA</a>
+                                <a href="https://github.com/ste1v0/valantis-frontend-task" target="_blank" rel="noreferrer">→ GitHub    </a>
                             </div>
                             <div className="hero__project-item" style={lightMode ? lightTheme : darkTheme}>
                                 <h4>React Course</h4>
