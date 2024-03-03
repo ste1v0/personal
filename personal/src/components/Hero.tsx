@@ -83,7 +83,7 @@ const darkTheme = {
                                 <a href="https://github.com/ste1v0/valantis-frontend-task" target="_blank" rel="noreferrer">→ GitHub    </a>
                             </div>
                             <div className="hero__project-item" style={lightMode ? lightTheme : darkTheme}>
-                                <h4>React Intensive</h4>
+                                <h4>Y_LAB React Intensive</h4>
                                 <p>In progress</p>
                                 <ul>
                                     <li>Deep dive</li>
