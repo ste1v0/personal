@@ -332,6 +332,30 @@ nav > ul > li {
 	box-shadow: 0 0 20px whitesmoke;
 }
 
+.hero__project-item-status {
+	font-weight: 200;
+	text-transform: uppercase;
+	font-size: .7rem;
+	padding: .75vh 1vw;
+	border-radius: 17px;
+	margin-left: 1vw;
+}
+
+.green {
+	background: green;
+	color: white;
+}
+
+.yellow {
+	background: yellow;
+	color: black;
+}
+
+.blue {
+	background: blue;
+	color: white;
+}
+
 .hero__fourth {
 	display: flex;
 	flex-direction: column;

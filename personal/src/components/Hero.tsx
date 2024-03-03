@@ -73,7 +73,7 @@ const darkTheme = {
                 <h2 className="hero__projects-title" style={{fontSize: fontIncreased ? 'var(--title-increased)': 'var(--title-default)'}}>Latest projects</h2>
                         <div className="hero__projects">
                             <div className="hero__project-item" style={lightMode ? lightTheme : darkTheme}>
-                                <h4>Valantis Frontend Task</h4>
+                                <h4>Valantis Frontend Task<sup className="hero__project-item-status green">done</sup></h4>
                                 <p>Products catalog</p>
                                 <ul>
                                     <li>Filters</li>
@@ -83,8 +83,8 @@ const darkTheme = {
                                 <a href="https://github.com/ste1v0/valantis-frontend-task" target="_blank" rel="noreferrer">→ GitHub    </a>
                             </div>
                             <div className="hero__project-item" style={lightMode ? lightTheme : darkTheme}>
-                                <h4>Y_LAB React Intensive</h4>
-                                <p>In progress</p>
+                                <h4>Y_LAB React Intensive<sup className="hero__project-item-status yellow">in progress</sup></h4>
+                                <p>5 weeks advanced course</p>
                                 <ul>
                                     <li>Deep dive</li>
                                     <li>Components</li>
@@ -95,7 +95,7 @@ const darkTheme = {
                                 <a href="https://github.com/ste1v0/react-webinar-3" target="_blank" rel="noreferrer">→ GitHub</a>
                             </div>
                             <div className="hero__project-item" style={lightMode ? lightTheme : darkTheme}>
-                                <h4>QSOFT Frontend Task</h4>
+                                <h4>QSOFT Frontend Task<sup className="hero__project-item-status green">done</sup></h4>
                                 <p>Adaptive CSS page</p>
                                 <ul>
                                     <li>Media queries</li>
@@ -104,7 +104,7 @@ const darkTheme = {
                                 <a href="https://github.com/ste1v0/QSOFT-Frontend-Task" target="_blank" rel="noreferrer">→ GitHub</a>
                             </div>
                             <div className="hero__project-item" style={lightMode ? lightTheme : darkTheme}>
-                                <h4>Personal</h4>
+                                <h4>Personal<sup className="hero__project-item-status green">done</sup></h4>
                                 <p>Sandbox & playground</p>
                                 <ul>
                                     <li>Mode/font changer</li>
@@ -115,7 +115,7 @@ const darkTheme = {
                                 <a href="https://github.com/ste1v0/personal" target="_blank" rel="noreferrer">→ GitHub</a>
                             </div>
                             <div className="hero__project-item" style={lightMode ? lightTheme : darkTheme}>
-                                <h4>VK Frontend Challenge</h4>
+                                <h4>VK Frontend Challenge<sup className="hero__project-item-status green">done</sup></h4>
                                 <p>Infinite cats feed</p>
                                 <ul>
                                     <li>Favorites</li>
@@ -125,7 +125,7 @@ const darkTheme = {
                                 <a href="https://github.com/ste1v0/frontend-challenge" target="_blank" rel="noreferrer">→ GitHub</a>
                             </div>
                             <div className="hero__project-item" style={lightMode ? lightTheme : darkTheme}>
-                                <h4>Boxd</h4>
+                                <h4>Boxd<sup className="hero__project-item-status blue">on hold</sup></h4>
                                 <p>Games database including most popular titles</p>
                                 <ul>
                                     <li>Hotkeys</li>
@@ -134,7 +134,7 @@ const darkTheme = {
                                 <a href="https://github.com/ste1v0/boxd" target="_blank" rel="noreferrer">→ GitHub</a>
                             </div>
                             <div className="hero__project-item" style={lightMode ? lightTheme : darkTheme}>
-                                <h4>Gaming News</h4>
+                                <h4>Gaming News<sup className="hero__project-item-status green">done</sup></h4>
                                 <p>All things related to gaming gathered from 4 different RSS feeds</p>
                                 <ul>
                                     <li>Mode/font changer</li>
