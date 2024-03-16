@@ -93,18 +93,6 @@ const darkTheme = {
                                 <a href="https://github.com/ste1v0/valantis-frontend-task" target="_blank" rel="noreferrer">→ GitHub    </a>
                             </div>
                             <div className="hero__project-item" style={lightMode ? lightTheme : darkTheme}>
-                                <h4>Y_LAB React Intensive<sup className="hero__project-item-status yellow">in progress</sup></h4>
-                                <p>5 weeks advanced course</p>
-                                <ul>
-                                    <li>Deep dive</li>
-                                    <li>Components</li>
-                                    <li>State</li>
-                                    <li>App logic</li>
-                                    <li>Services</li>
-                                </ul>
-                                <a href="https://github.com/ste1v0/react-webinar-3" target="_blank" rel="noreferrer">→ GitHub</a>
-                            </div>
-                            <div className="hero__project-item" style={lightMode ? lightTheme : darkTheme}>
                                 <h4>QSOFT Frontend Task<sup className="hero__project-item-status green">done</sup></h4>
                                 <p>Adaptive CSS page</p>
                                 <ul>
