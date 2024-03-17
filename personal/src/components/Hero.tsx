@@ -72,7 +72,16 @@ const darkTheme = {
                 <section className="hero__third" id="projects">
                 <h2 className="hero__projects-title" style={{fontSize: fontIncreased ? 'var(--title-increased)': 'var(--title-default)'}}>Latest projects</h2>
                         <div className="hero__projects">
-                        <div className="hero__project-item" style={lightMode ? lightTheme : darkTheme}>
+                            <div className="hero__project-item" style={lightMode ? lightTheme : darkTheme}>
+                                <h4>Helldivers 2 status<sup className="hero__project-item-status yellow">in progress</sup></h4>
+                                <p>In-game status</p>
+                                <ul>
+                                    <li>Material UI</li>
+                                    <li>TypeScript</li>
+                                </ul>
+                                <a href="https://github.com/ste1v0/helldivers2-status" target="_blank" rel="noreferrer">→ GitHub</a>
+                            </div>
+                            <div className="hero__project-item" style={lightMode ? lightTheme : darkTheme}>
                                 <h4>VK Market Task<sup className="hero__project-item-status green">done</sup></h4>
                                 <p>Shopping cart</p>
                                 <ul>
@@ -80,7 +89,7 @@ const darkTheme = {
                                     <li>Material UI</li>
                                     <li>TypeScript</li>
                                 </ul>
-                                <a href="https://github.com/ste1v0/vk-market" target="_blank" rel="noreferrer">→ GitHub    </a>
+                                <a href="https://github.com/ste1v0/vk-market" target="_blank" rel="noreferrer">→ GitHub</a>
                             </div>
                             <div className="hero__project-item" style={lightMode ? lightTheme : darkTheme}>
                                 <h4>Valantis Frontend Task<sup className="hero__project-item-status green">done</sup></h4>
@@ -90,7 +99,7 @@ const darkTheme = {
                                     <li>Pagination</li>
                                     <li>TypeScript</li>
                                 </ul>
-                                <a href="https://github.com/ste1v0/valantis-frontend-task" target="_blank" rel="noreferrer">→ GitHub    </a>
+                                <a href="https://github.com/ste1v0/valantis-frontend-task" target="_blank" rel="noreferrer">→ GitHub</a>
                             </div>
                             <div className="hero__project-item" style={lightMode ? lightTheme : darkTheme}>
                                 <h4>QSOFT Frontend Task<sup className="hero__project-item-status green">done</sup></h4>
