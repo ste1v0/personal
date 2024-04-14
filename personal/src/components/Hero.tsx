@@ -73,6 +73,16 @@ const darkTheme = {
                 <h2 className="hero__projects-title" style={{fontSize: fontIncreased ? 'var(--title-increased)': 'var(--title-default)'}}>Latest projects</h2>
                         <div className="hero__projects">
                             <div className="hero__project-item" style={lightMode ? lightTheme : darkTheme}>
+                                <h4>NextJS App<sup className="hero__project-item-status yellow">in progress</sup></h4>
+                                <p>Playground</p>
+                                <ul>
+                                    <li>SSR</li>
+                                    <li>Caching</li>
+                                    <li>API endpoints</li>
+                                </ul>
+                                <a href="#" target="_blank" rel="noreferrer">→ TBD</a>
+                            </div>
+                            <div className="hero__project-item" style={lightMode ? lightTheme : darkTheme}>
                                 <h4>Helldivers 2 status<sup className="hero__project-item-status green">done</sup></h4>
                                 <p>In-game activities status</p>
                                 <ul>
