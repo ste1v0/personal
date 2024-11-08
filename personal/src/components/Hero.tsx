@@ -49,7 +49,7 @@ const darkTheme = {
                     </div>
                     <div className="hero__text">
                         <div className="hero__name" style={{fontSize: fontIncreased ? 'var(--name-increased)': 'var(--name-default)'}}>Stepan Serov</div>
-                        <span className="hero__position" style={{fontSize: fontIncreased ? 'var(--position-increased)': 'var(--position-default)'}}>React Sorcery in the Making </span>
+                        <span className="hero__position" style={{fontSize: fontIncreased ? 'var(--position-increased)': 'var(--position-default)'}}>web Sorcery in the Making </span>
                     </div>
                 </section>
                 <section className="hero__second">
