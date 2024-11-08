@@ -83,7 +83,7 @@ const darkTheme = {
                                 <a href="https://github.com/ste1v0/mindbox-todo" target="_blank" rel="noreferrer">→ GitHub</a>
                             </div>
                             <div className="hero__project-item" style={lightMode ? lightTheme : darkTheme}>
-                                <h4>NextJS App<sup className="hero__project-item-status yellow">in progress</sup></h4>
+                                <h4>NextJS App<sup className="hero__project-item-status green">done</sup></h4>
                                 <p>Playground</p>
                                 <ul>
                                     <li>SSR</li>
