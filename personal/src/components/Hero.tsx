@@ -49,7 +49,7 @@ const darkTheme = {
                     </SlAnimation>
                     </div>
                     <div className="hero__text">
-                        <Emoji emoji="waving-hand"/>
+                        <Emoji emoji="waving-hand" size={fontIncreased ? 92 : 64}/>
                         <div className="hero__name" style={{fontSize: fontIncreased ? 'var(--name-increased)': 'var(--name-default)'}}>Hi there! </div>
                     </div>
                 </section>
