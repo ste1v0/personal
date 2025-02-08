@@ -3,6 +3,7 @@ import { SlAnimation } from '@shoelace-style/shoelace/dist/react';
 import { Icon } from '@iconify/react';
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay } from 'swiper' 
+import { Emoji } from 'react-emojis'
 import 'swiper/css'
 import '../App.css'
 
@@ -48,8 +49,8 @@ const darkTheme = {
                     </SlAnimation>
                     </div>
                     <div className="hero__text">
-                        <div className="hero__name" style={{fontSize: fontIncreased ? 'var(--name-increased)': 'var(--name-default)'}}>Hi there! <img src="/waving-hand.svg" alt="wave" width="64" height="64" /></div>
-                        <span className="hero__position" style={{fontSize: fontIncreased ? 'var(--position-increased)': 'var(--position-default)'}}>It's good to see you here</span>
+                        <Emoji emoji="waving-hand"/>
+                        <div className="hero__name" style={{fontSize: fontIncreased ? 'var(--name-increased)': 'var(--name-default)'}}>Hi there! </div>
                     </div>
                 </section>
                 <section className="hero__second">
