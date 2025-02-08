@@ -73,6 +73,16 @@ const darkTheme = {
                 <h2 className="hero__projects-title" style={{fontSize: fontIncreased ? 'var(--title-increased)': 'var(--title-default)'}}>Latest projects</h2>
                         <div className="hero__projects">
                             <div className="hero__project-item" style={lightMode ? lightTheme : darkTheme}>
+                                <h4>LFT<sup className="hero__project-item-status green">done</sup></h4>
+                                <p>Find teammates</p>
+                                <ul>
+                                    <li>NextJS</li>
+                                    <li>Steam Auth/API</li>
+                                    <li>Supabase</li>
+                                </ul>
+                                <a href="https://github.com/ste1v0/mindbox-todo" target="_blank" rel="noreferrer">→ GitHub</a>
+                            </div>
+                            <div className="hero__project-item" style={lightMode ? lightTheme : darkTheme}>
                                 <h4>Mindbox<sup className="hero__project-item-status green">done</sup></h4>
                                 <p>ToDo App</p>
                                 <ul>
@@ -152,7 +162,7 @@ const darkTheme = {
                                 <a href="https://github.com/ste1v0/frontend-challenge" target="_blank" rel="noreferrer">→ GitHub</a>
                             </div>
                             <div className="hero__project-item" style={lightMode ? lightTheme : darkTheme}>
-                                <h4>Boxd<sup className="hero__project-item-status blue">on hold</sup></h4>
+                                <h4>Boxd<sup className="hero__project-item-status green">done</sup></h4>
                                 <p>Games database including most popular titles</p>
                                 <ul>
                                     <li>Hotkeys</li>
