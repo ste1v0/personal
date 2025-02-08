@@ -236,8 +236,10 @@ nav > ul > li {
 
 .hero__text {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	align-items: center;
+	gap: 2.5vw;
+	margin-top: 3vh;
 }
 
 .hero__position {
@@ -256,8 +258,6 @@ nav > ul > li {
 	font-optical-sizing: auto;
 	font-weight: 400;
 	font-style: normal;
-	display: flex;
-	align-items: center;
 }
 
 @media screen and (max-width: 900px) {
