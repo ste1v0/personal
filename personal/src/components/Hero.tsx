@@ -171,21 +171,6 @@ const darkTheme = {
                             </div>
                         </div>   
                 </section>
-                <section className="hero__fourth" id="contacts">
-                <h2 className="hero__contacts-title" style={{fontSize: fontIncreased ? 'var(--title-increased)': 'var(--title-default)'}}>Contacts</h2>
-                        <div className="hero__contacts">
-                            <div style={lightMode ? lightTheme : darkTheme} className="hero__contact-item scale">
-                                <a href="https://ste1v0.dev/cv_serov_stepan.pdf" target="_blank" rel="noreferrer">
-                                    <Icon icon="vscode-icons:file-type-pdf2" width="96" height="96" />
-                                </a>
-                            </div>
-                            <div style={lightMode ? lightTheme : darkTheme} className="hero__contact-item scale">
-                                <a href="https://t.me/ste1v0" target="_blank" rel="noreferrer">
-                                    <Icon icon="logos:telegram" width="96" height="96" />
-                                </a>
-                            </div>
-                        </div>   
-                </section>
             </main>
         </>
     )
