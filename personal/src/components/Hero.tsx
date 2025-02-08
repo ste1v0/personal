@@ -73,8 +73,8 @@ const darkTheme = {
                 <h2 className="hero__projects-title" style={{fontSize: fontIncreased ? 'var(--title-increased)': 'var(--title-default)'}}>Latest projects</h2>
                         <div className="hero__projects">
                             <div className="hero__project-item" style={lightMode ? lightTheme : darkTheme}>
-                                <h4>LFT<sup className="hero__project-item-status green">done</sup></h4>
-                                <p>Find teammates</p>
+                                <h4>LFG<sup className="hero__project-item-status green">done</sup></h4>
+                                <p>Find in-game teammates</p>
                                 <ul>
                                     <li>NextJS</li>
                                     <li>Steam Auth/API</li>
