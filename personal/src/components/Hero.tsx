@@ -48,8 +48,8 @@ const darkTheme = {
                     </SlAnimation>
                     </div>
                     <div className="hero__text">
-                        <div className="hero__name" style={{fontSize: fontIncreased ? 'var(--name-increased)': 'var(--name-default)'}}>Stepan Serov</div>
-                        <span className="hero__position" style={{fontSize: fontIncreased ? 'var(--position-increased)': 'var(--position-default)'}}>web Sorcery in the Making </span>
+                        <div className="hero__name" style={{fontSize: fontIncreased ? 'var(--name-increased)': 'var(--name-default)'}}>Hi there! <img src="../assets/waving-hand.svg" alt="wave" width="64" height="64" /></div>
+                        <span className="hero__position" style={{fontSize: fontIncreased ? 'var(--position-increased)': 'var(--position-default)'}}>It's good to see you here</span>
                     </div>
                 </section>
                 <section className="hero__second">
