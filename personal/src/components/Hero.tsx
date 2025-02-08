@@ -80,7 +80,7 @@ const darkTheme = {
                                     <li>Steam Auth/API</li>
                                     <li>Supabase</li>
                                 </ul>
-                                <a href="https://github.com/ste1v0/mindbox-todo" target="_blank" rel="noreferrer">→ GitHub</a>
+                                <a href="https://next-steam.vercel.app/" target="_blank" rel="noreferrer">→ Link</a>
                             </div>
                             <div className="hero__project-item" style={lightMode ? lightTheme : darkTheme}>
                                 <h4>Mindbox<sup className="hero__project-item-status green">done</sup></h4>
