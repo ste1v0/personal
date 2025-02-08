@@ -39,22 +39,8 @@ export default function Header({lightMode, setLightMode, fontIncreased, setFontI
 
     return (
         <header className="fade-in-header">
-            <nav style={{backgroundColor: lightMode ? '#282836' : '#CACAD3', color: lightMode ? 'white' : 'black'}}>
+            <nav>
                 <ul className="header__features">
-                    <li style={{backgroundColor: lightMode ? '#141515' : '#EEF0F3'}} className="header__homepage">
-                        <Link to="#">
-                            <Icon icon="line-md:home-md-twotone-alt" width="24" height="24" />
-                        </Link>
-                    </li>
-                    <li className="header__link">
-                        <Link to="#projects">Projects</Link>
-                     </li>
-                    <li className="header__link">
-                        <Link to="#contacts">Contacts</Link>
-                    </li>
-                    <li className="header__link">
-                        <a href="https://github.com/lydiahallie/javascript-questions#1-whats-the-output" target="_blank" rel="noreferrer">JS <Icon icon="lets-icons:external" /></a>
-                    </li>   
                     <li className="header__right">
                         <span className="material-symbols-outlined hover pointer right" onClick={changeFont}>
                                 {fontIncreased ? "text_decrease" : "text_increase"}
