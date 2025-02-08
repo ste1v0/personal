@@ -3,7 +3,7 @@ import { SlAnimation } from '@shoelace-style/shoelace/dist/react';
 import { Icon } from '@iconify/react';
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay } from 'swiper' 
-import { Emoji } from 'react-emojis'
+import Emoji from 'react-emojis'
 import 'swiper/css'
 import '../App.css'
 
