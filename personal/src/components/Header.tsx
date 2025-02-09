@@ -46,7 +46,7 @@ export default function Header({lightMode, setLightMode, fontIncreased, setFontI
                             <img src="/telegram-icon.svg" alt="Telegram" />
                         </Link>
                         <Link to="https://github.com/ste1v0" target="_blank" className="header__link">
-                            <img src={lightMode ? "/github-icon-light.svg" : "/github-icon-dark.svg"} alt="GitHub" />
+                            <img src={lightMode ? "/github-icon.svg" : "/github-dark.svg"} alt="GitHub" />
                         </Link>
                         <Link to="https://linkedin.com/in/stepanserov" target="_blank" className="header__link">
                             <img src="/linkedin-icon.svg" alt="LinkedIn" />
