@@ -193,6 +193,13 @@ nav > ul > li {
 .header__right {
 	display: flex;
 	gap: 2.5vw;
+	margin-right: auto;
+	padding-left: 2.5vw;
+}
+
+.header__right {
+	display: flex;
+	gap: 2.5vw;
 	margin-left: auto;
 	padding-right: 2.5vw;
 }
