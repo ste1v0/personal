@@ -190,7 +190,7 @@ nav > ul > li {
 	text-wrap: nowrap;
 }
 
-.header__right {
+.header__left {
 	display: flex;
 	gap: 2.5vw;
 	margin-right: auto;
