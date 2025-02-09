@@ -42,11 +42,14 @@ export default function Header({lightMode, setLightMode, fontIncreased, setFontI
             <nav>
                 <ul className="header__features">
                     <li className="header__left">
-                        <Link to="https://linkedin.com/in/stepanserov" target="_blank" className="header__link">
-                            <img src="/linkedin-icon.svg" alt="LinkedIn" />
-                        </Link>
                         <Link to="https://t.me/ste1v0_dev" target="_blank" className="header__link">
                             <img src="/telegram-icon.svg" alt="Telegram" />
+                        </Link>
+                        <Link to="https://github.com/ste1v0" target="_blank" className="header__link">
+                            <img src="/github-icon.svg" alt="GitHub" />
+                        </Link>
+                        <Link to="https://linkedin.com/in/stepanserov" target="_blank" className="header__link">
+                            <img src="/linkedin-icon.svg" alt="LinkedIn" />
                         </Link>
                     </li>
                     <li className="header__right">
