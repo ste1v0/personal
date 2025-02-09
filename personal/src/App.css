@@ -461,21 +461,3 @@ footer {
 		margin-bottom: 8vh;
 	}
 }
-
-.footer__icons {
-	background-size: cover;
-	background-position: center;
-	padding: 1rem;
-}
-
-.footer__github--light {
-	background-image: url('./assets/github-white.svg');
-	width: 24px;
-	height: 24px;
-}
-
-.footer__github--dark {
-	background-image: url('./assets/github-dark.svg');
-	width: 24px;
-	height: 24px;
-}
